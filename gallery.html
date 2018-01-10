@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Suicide Squad - Gallery</title>
+<link rel="stylesheet" href="css/styles.css">
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="js/galleryJS.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="fadeUp">
+		</div>
+		<div class="navDiv">
+			<nav>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="characters.html">CHARACTERS</a></li>
+					<li><a href="shop.html">SHOP</a></li>
+					<li><a href="squadBuilder.html">SQUAD-BUILDER</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="body">
+		<div class="fadeDown">
+		</div>
+		<div id="cycler" style="width: 52vw;height: 26vw;background-color: aqua;position: absolute; left: 50%; transform: translate(-50%);">
+		<img class="" src="assests/FadeImages/FadeImage001.jpg" alt="fadeImage num1" title="Fade Image Number 1" width="100%" height="100%" style="display: block; z-index: 2;">
+		<img src="assests/FadeImages/FadeImage002.jpg" alt="fadeImage num2" title="Fade Image Number 2" width="100%" height="100%" class="" style="z-index: 1; display: block;">
+		<img src="assests/FadeImages/FadeImage003.jpg" alt="fadeImage num3" title="Fade Image Number 3" width="100%" height="100%" class="active" style="z-index: 3; display: block;">		
+	</div>
+	</div>
+	<script>
+		
+	function cycleImages(){
+		  var $active = $('#cycler .active');
+		  var $next = ($active.next().length > 0) ? $active.next() : $('#cycler img:first');
+		  $next.css('z-index',2);
+		  $active.fadeOut(1000,function(){
+			  $active.css('z-index',1).show().removeClass('active');
+			  $next.css('z-index',3).addClass('active');
+		  });
+		}
+	$(document).ready(function(){
+	setInterval('cycleImages()', 3000);
+	})
+	</script>
+</body>
+</html>
