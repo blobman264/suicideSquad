@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Suicide Squad - SquadBuilder</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div class="header">
+			<div class="fadeUp">
+			</div>
+			<div class="navDiv">
+				<nav>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="gallery.html">GALLERY</a></li>
+						<li><a href="characters.html">CHARACTERS</a></li>
+						<li><a href="shop.html">SHOP</a></li>
+						<li><a href="squadBuilder.html">SQUAD-BUILDER</a></li>
+					</ul>
+				</nav>
+			</div>
+	</div>
+	<div class="body">
+		<div class="fadeDown">
+		</div>
+		<div>
+		<img style="float: left;" id="slot1" src="assests/topTrumpCards/Adding.png">
+		<img style="float: left;" id="slot2" src="assests/topTrumpCards/Adding.png">
+		<div style="float: left; width: 240px; height: 400px;">
+		</div>
+		<img style="float: left;" id="slot3" src="assests/topTrumpCards/Adding.png">
+		<img style="float: left;" id="slot4" src="assests/topTrumpCards/Adding.png">
+		</div>
+		<div style="width: 1200px; height: 30px; float: left;">
+		<button style="width: 170px;margin-left: 35px;height: 20px;margin-top: 5px;margin-right: 35px;">Remove</button>
+		<button style="float: right; width: 170px;margin-left: 35px;height: 20px;margin-top: 5px;margin-right: 35px;">Remove</button>
+		<button style="float: right;width: 170px;margin-left: 35px;height: 20px;margin-top: 5px;margin-right: 35px;">Remove</button>
+		<button style="width: 170px;margin-left: 35px;height: 20px;margin-top: 5px;margin-right: 35px;">Remove</button>
+		</div>
+		<div style="width: 100%;">
+		<!--Start Of Flip-->
+		<div onclick="squadDisplay('assests/topTrumpCards/CaptainBoomerangFront.png', 'char001')" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+		<div class="front">
+			<img src="assests/topTrumpCards/CaptainBoomerangBack.png">
+		</div>
+		<div class="back">
+			<img id="char001" src="assests/topTrumpCards/CaptainBoomerangFront.png">
+		</div>
+		</div>
+		</div>
+		
+		<!--Start Of Flip-->
+		<div onclick="squadDisplay('assests/topTrumpCards/SlipknotFront.png', 'char00102')" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+		<div class="front">
+			<img src="assests/topTrumpCards/SlipknotBack.png">
+		</div>
+		<div class="back">
+			<img id="char002" src="assests/topTrumpCards/SlipknotFront.png">
+		</div>
+		</div>
+		</div>
+		<!--Start Of Flip-->
+		<div onclick="squadDisplay('assests/topTrumpCards/RickFlagFront.png', 'char003')" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+		<div class="front">
+			<img src="assests/topTrumpCards/RickFlagBack.png">
+		</div>
+		<div class="back">
+			<img id="char003" src="assests/topTrumpCards/RickFlagFront.png">
+		</div>
+		</div>
+		</div>
+		<!--Start Of Flip-->
+		<div onclick="squadDisplay('assests/topTrumpCards/KillerCrocFront.png', 'char004')" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+		<div class="front">
+			<img src="assests/topTrumpCards/KillerCrocBack.png">
+		</div>
+		<div class="back">
+			<img id="char004" src="assests/topTrumpCards/KillerCrocFront.png">
+		</div>
+		</div>
+		</div>
+		<!--Start Of Flip-->
+		<div onclick="squadDisplay('assests/topTrumpCards/KatanaFront.png', 'char005')" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+		<div class="front">
+			<img src="assests/topTrumpCards/KatanaBack.png">
+		</div>
+		<div class="back">
+			<img id="char005" src="assests/topTrumpCards/KatanaFront.png">
+		</div>
+		</div>
+		</div>
+		<!--Start Of Flip-->
+		<div onclick="squadDisplay('assests/topTrumpCards/JokerFront.png', 'char006')" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+		<div class="front">
+			<img src="assests/topTrumpCards/JokerBack.png">
+		</div>
+		<div class="back">
+			<img id="char006" src="assests/topTrumpCards/JokerFront.png">
+		</div>
+		</div>
+		</div>
+		<!--Start Of Flip-->
+		<div onclick="squadDisplay('assests/topTrumpCards/HarleyQuinnFront.png', 'char007')" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+		<div class="front">
+			<img src="assests/topTrumpCards/HarleyQuinnBack.png">
+		</div>
+		<div class="back">
+			<img id="char007" src="assests/topTrumpCards/HarleyQuinnFront.png">
+		</div>
+		</div>
+		</div>
+		<!--Start Of Flip-->
+		<div onclick="squadDisplay('assests/topTrumpCards/EnchantressFront.png', 'char008')" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+		<div class="front">
+			<img src="assests/topTrumpCards/EnchantressBack.png">
+		</div>
+		<div class="back">
+			<img id="char008" src="assests/topTrumpCards/EnchantressFront.png">
+		</div>
+		</div>
+		</div>
+		<!--Start Of Flip-->
+		<div onclick="squadDisplay('assests/topTrumpCards/ElDiabloFront.png', 'char009')" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+		<div class="front">
+			<img src="assests/topTrumpCards/ElDIabloBack.png">
+		</div>
+		<div class="back">
+			<img id="char009" src="assests/topTrumpCards/ElDiabloFront.png">
+		</div>
+		</div>
+		</div>
+		<!--Start Of Flip-->
+		<div onclick="squadDisplay('assests/topTrumpCards/deadshotFront.png', 'char010')" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+		<div class="front">
+			<img src="assests/topTrumpCards/deadshotBack.png">
+		</div>
+		<div class="back">
+			<img id="char010" src="assests/topTrumpCards/deadshotFront.png">
+		</div>
+		</div>
+		</div>
+		</div>
+	</div>
+	<script>
+		squadStart();
+	</script>
+</body>
+</html>
