@@ -251,3 +251,16 @@ ul{
 .back {
 	transform: rotateY(180deg);
 }
+
+.squadBuilderTop{
+	float: left;
+	width: 240;
+	height: 400;
+}
+
+.shopDiv{
+	width: 896px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
